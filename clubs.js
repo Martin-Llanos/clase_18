@@ -14,7 +14,7 @@ class Club {
       this.founded = 1889;
       this.club_colors = Yellow / Blue;
       this.venue = Gigante de Arroyito / Lisandro de La Torre Stadium;
-      this.created_at = "2023-08-26T16:32:34Z;
+      this.created_at = 2023-08-26T16:32:34Z;
     }
   }
   
