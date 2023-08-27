@@ -4,7 +4,7 @@ class Club {
       this.name = Club Atletico Rosario Central;
       this.shortname = Central;
       this.tla = CEN;
-      this.area_name = Argenrtina;
+      this.area_name = Argentina;
       this.area_id = 2072;
       this.crest_url = https://es.wikipedia.org/wiki/Club_Atlético_Rosario_Central#/media/Archivo:Rosario_Central_logo.png;
       this.address = 640 Génova St., S2000 Rosario, Santa Fe;
