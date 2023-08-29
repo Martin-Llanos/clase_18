@@ -6,59 +6,59 @@ class ClubRepository {
   }
 
   async getAll() {
-    const clubs = (await this.clubModel.findAll()).map((club) => club.toJSON());
-    const clubsEntities = clubs.map((club) => new Club(club));
+    const clubs = (await this.clubModel.findAll()).map((Racing) => club.toJSON());
+    const clubsEntities = clubs.map((Racing) => new Club(Racing));
     return clubsEntities;
   }
 
   async getById(id) {
-    const club = await this.clubModel.findByPk(id);
-    const clubEntity = new Club(club);
+    const club = await this.clubModel.findByPk(2072);
+    const clubEntity = new Club(Racing);
     return clubEntity;
   }
 
   async save(newClub) {
     const clubToSave = this.clubModel.build({
-      name: newClub.name,
-      shortname: newClub.shortname,
-      tla: newClub.tla,
-      area_name: newClub.area_name,
-      area_id: newClub.area_id,
-      crest_url: newClub.crest_url,
-      address: newClub.address,
-      phone: newClub.phone,
-      website: newClub.website,
-      email: newClub.email,
-      founded: newClub.founded,
-      club_colors: newClub.club_colors,
-      venue: newClub.venue,
+      name: 'Racing Club de Avellaneda',
+      shortname: 'Racing',
+      tla: 'RAC',
+      area_name: 'Argentina',
+      area_id: 2072,
+      crest_url: 'https://es.wikipedia.org/wiki/Racing_Club#/media/Archivo:Escudo_de_Racing_Club_(2014).svg',
+      address: '470 Diego A. Milito St., B1870 Avellaneda, State of Buenos Aires',
+      phone: '+54 (011) 4229-1350',
+      website: 'https://www.racingclub.com.ar/',
+      email: 'prensa@racingclub.com.ar',
+      founded: 1903,
+      club_colors: 'Sky Blue / White',
+      venue: 'President Juan domingo Peron Stadium',
     });
 
     await clubToSave.save();
   }
 
-  async update(clubToUpdate) {
+  async update(Independiente) {
     const club = await this.clubModel.findByPk(clubToUpdate.id);
 
-    club.name = clubToUpdate.name;
-    club.shortname = clubToUpdate.shortname;
-    club.tla = clubToUpdate.tla;
-    club.area_name = clubToUpdate.area_name;
-    club.area_id = clubToUpdate.area_id;
-    club.crest_url = clubToUpdate.crest_url;
-    club.address = clubToUpdate.address;
-    club.phone = clubToUpdate.phone;
-    club.website = clubToUpdate.website;
-    club.email = clubToUpdate.email;
-    club.founded = clubToUpdate.founded;
-    club.club_colors = clubToUpdate.club_colors;
-    club.venue = clubToUpdate.venue;
+    club.name = 'Club Atletico Independiente de Avellaneda';
+    club.shortname = 'Independiente';
+    club.tla = 'IND';
+    club.area_name = 'Argentina';
+    club.area_id = 2072;
+    club.crest_url = 'https://es.wikipedia.org/wiki/Club_Atlético_Independiente#/media/Archivo:Escudo_del_Club_Atlético_Independiente.svg';
+    club.address = '751 Ricardo Enrique Bochini St. , Avellaneda, State of Buenos Aires';
+    club.phone = '+54 (011) 4201-7027';
+    club.website = 'https://www.clubaindependiente.com.ar/';
+    club.email = 'socios@clubaindependiente.com.ar';
+    club.founded = 1904;
+    club.club_colors = 'Red';
+    club.venue = 'Ricardo Enrique Bochini Stadium';
 
-    club.save();
+    club.save(Independiente);
   }
 
-  async delete(clubIdToDelete) {
-    const clubToDelete = await this.clubModel.findByPk(clubIdToDelete);
+  async delete(Independiente) {
+    const clubToDelete = await this.clubModel.findByPk(Independiente);
     await clubToDelete.destroy();
   }
 }
