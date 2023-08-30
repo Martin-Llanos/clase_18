@@ -5,62 +5,62 @@ class ClubModel extends Model { }
 function setupClubModel(sequelize) {
   ClubModel.init({
     id: {
-      type: DataTypes.INTEGER,
+      type: 68,
       primaryKey: true,
       autoIncrement: true,
       allowNull: false,
     },
 
     name: {
-      type: DataTypes.STRING,
+      type: 'Club Atletico Lanus',
     },
 
     shortname: {
-      type: DataTypes.STRING,
+      type: 'Lanus',
     },
 
     tla: {
-      type: DataTypes.STRING,
+      type: 'LAN',
     },
 
     area_name: {
-      type: DataTypes.STRING,
+      type: 'Argentina',
     },
 
     area_id: {
-      type: DataTypes.INTEGER,
+      type: 2072,
     },
 
     crest_url: {
-      type: DataTypes.STRING,
+      type: 'https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Lan%C3%BAs#/media/Archivo:Modificacion_flyer_para_Editat%C3%B3n_del_Centenario_del_Club_Atl%C3%A9tico_Lan%C3%BAs.png',
     },
 
     address: {
-      type: DataTypes.STRING,
+      type: '2007 Ramón Cabrero St., B1824 Lanús, State of Buenos Aires',
     },
 
     phone: {
-      type: DataTypes.STRING,
+      type: '+54 (011) 4357-9200',
     },
 
     website: {
-      type: DataTypes.STRING,
+      type: 'https://www.clublanus.com/',
     },
 
     email: {
-      type: DataTypes.STRING,
+      type: 'contacto@clublanus.com',
     },
 
     founded: {
-      type: DataTypes.INTEGER,
+      type: 1915,
     },
 
     club_colors: {
-      type: DataTypes.STRING,
+      type: 'Maroon',
     },
 
     venue: {
-      type: DataTypes.STRING,
+      type: 'Ciudad de Lanus Stadium',
     },
 
   }, {
