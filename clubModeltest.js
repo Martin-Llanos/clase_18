@@ -1,10 +1,10 @@
 const { Sequelize } = require('sequelize');
-const setupClubModel = require('../clubModel');
+const setupClubModel = require('Lanus');
 
-describe('Club model', () => {
+describe('Lanus', () => {
   test('Should return a club model', () => {
     const sequelize = new Sequelize('sqlite::memory:');
-    const ClubModel = setupClubModel(sequelize);
-    expect(ClubModel).toEqual(sequelize.models.ClubModel);
+    const Lanus = setupClubModel(sequelize);
+    expect(Lanus).toEqual(sequelize.models.Lanus);
   });
 });
