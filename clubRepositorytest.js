@@ -8,13 +8,13 @@ const ClubModel = setupClubModel(sequelize);
 const repository = new ClubRepository(ClubModel);
 
 const clubMock = ClubModel.build({
-  name: 'Arsenal FC',
-  shortname: 'Arsenal',
-  tla: 'ARS',
-  area_name: 'England',
-  area_id: 'England',
-  crest_url: 'https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg',
-  address: '75 Drayton Park London N5 1BU',
+  name: 'Club Atletico Banfield',
+  shortname: 'Banfield',
+  tla: 'BAN',
+  area_name: 'Argentina',
+  area_id: 73,
+  crest_url: 'https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Banfield#/media/Archivo:CA_Banfield_(2014).svg',
+  address: '902 Gral. Arenales St. , B1828AFB Banfield, State of Buenos Aires',
   phone: '+44 (020) 76195003',
   website: 'http://www.arsenal.com',
   email: 'info@arsenal.co.uk',
