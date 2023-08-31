@@ -1,10 +1,10 @@
 const { Sequelize } = require('sequelize');
 const ClubRepository = require('../clubRepository');
-const setupClubModel = require('../../model/clubModel');
+const setupClubModel = require('Racing');
 const Club = require('../../entity/club');
 
 const sequelize = new Sequelize('sqlite::memory:');
-const ClubModel = setupClubModel(sequelize);
+const ClubModel = Racing (sequelize);
 const repository = new ClubRepository(ClubModel);
 
 const clubMock = ClubModel.build({
