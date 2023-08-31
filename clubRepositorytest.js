@@ -1,26 +1,26 @@
 const { Sequelize } = require('sequelize');
 const ClubRepository = require('../clubRepository');
-const setupClubModel = require('Racing');
+const setupClubModel = require('Lanus');
 const Club = require('../../entity/club');
 
 const sequelize = new Sequelize('sqlite::memory:');
-const ClubModel = Racing (sequelize);
+const ClubModel = Lanus (sequelize);
 const repository = new ClubRepository(ClubModel);
 
 const clubMock = ClubModel.build({
-  name: 'Club Atletico Banfield',
-  shortname: 'Banfield',
-  tla: 'BAN',
+  name: 'Club Atletico Lanus',
+  shortname: 'Lanus',
+  tla: 'LAN',
   area_name: 'Argentina',
-  area_id: 73,
-  crest_url: 'https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Banfield#/media/Archivo:CA_Banfield_(2014).svg',
-  address: '902 Gral. Arenales St. , B1828AFB Banfield, State of Buenos Aires',
-  phone: '+44 (020) 76195003',
-  website: 'http://www.arsenal.com',
-  email: 'info@arsenal.co.uk',
-  founded: 1886,
-  club_colors: 'Red / White',
-  venue: 'Emirates Stadium',
+  area_id: 68,
+  crest_url: 'https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Lan%C3%BAs#/media/Archivo:Modificacion_flyer_para_Editat%C3%B3n_del_Centenario_del_Club_Atl%C3%A9tico_Lan%C3%BAs.png',
+  address: '2007 Ramón Cabrero St., B1824 Lanús, State of Buenos Aires',
+  phone: '+54 (011) 4357-9200',
+  website: 'https://www.clublanus.com/',
+  email: 'contacto@clublanus.com',
+  founded: 1915,
+  club_colors: 'Maroon',
+  venue: 'Ciudad de Lanus Stadium',
 });
 
 const clubMock2 = ClubModel.build({
