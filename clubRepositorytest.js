@@ -49,8 +49,8 @@ describe('Club Repository', () => {
   test('Should return all clubs entities', async () => {
     const clubs = await repository.getAll();
 
-    expect(clubs[0]).toStrictEqual(new Club(clubMock));
-    expect(clubs[1]).toStrictEqual(new Club(clubMock2));
+    expect(clubs[0]).toStrictEqual(new Club(Lanus));
+    expect(clubs[1]).toStrictEqual(new Club(Banfield));
   });
 
   test('Should return one club entity', async () => {
