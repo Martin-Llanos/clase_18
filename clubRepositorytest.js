@@ -60,22 +60,22 @@ describe('Club Repository', () => {
 
   test('Should save a club', async () => {
     const clubToSaveMock = {
-      name: 'Manchester City FC',
-      shortname: 'Man City',
-      tla: 'MCI',
-      area_name: 'England',
+      name: 'Arsenal Futbol Club de Sarandí',
+      shortname: 'Arsenal',
+      tla: 'ARS',
+      area_name: 'Argentina',
       area_id: 2072,
-      crest_url: 'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg',
-      address: 'SportCity Manchester M11 3FF',
-      phone: '+44 (0870) 0621894',
-      website: 'https://www.mancity.com',
-      email: 'mancity@mancity.com',
-      founded: 1880,
-      club_colors: 'Sky Blue / White',
-      venue: 'Etihad Stadium',
+      crest_url: 'https://en.wikipedia.org/wiki/Arsenal_de_Sarandí#/media/File:Arsenal_Sarandí_logo.svg',
+      address: '3660 Julio H Grondona St. , B1872 Sarandí, State of Buenos Aires, Argentina',
+      phone: '+54 (011) 4204-0755',
+      website: 'https://www.arsenalfc.com.ar/',
+      email: 'prensa@arsenalfc.com.ar',
+      founded: 1957,
+      club_colors: 'Sky Blue / Red',
+      venue: 'Julio Humberto Grondona Stadium',
     };
 
-    await repository.save(clubToSaveMock);
+    await repository.save(Arsenal);
     const savedClub = await repository.getById(3);
 
     expect(savedClub).toBeTruthy();
