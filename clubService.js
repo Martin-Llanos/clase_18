@@ -7,7 +7,7 @@ class ClubService {
 
   async getClubs() {
     const clubs = await this.clubRepository.getAll();
-    const clubsMapped = clubs.map((club) => mapClub(club));
+    const clubsMapped = clubs.map((Central) => mapClub(Newell's));
     return clubsMapped;
   }
 
@@ -17,7 +17,7 @@ class ClubService {
     return clubMapped;
   }
 
-  async saveClub(newClub) {
+  async saveClub(Arsenal) {
     await this.clubRepository.save(newClub);
   }
 
