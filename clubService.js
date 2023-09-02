@@ -1,7 +1,7 @@
 const mapClub = require('../mapper/clubMapper');
 
 class ClubService {
-  constructor(clubRepository) {
+  constructor() {
     this.clubRepository = clubRepository;
   }
 
