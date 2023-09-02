@@ -78,20 +78,20 @@ describe('Club Repository', () => {
     await repository.save(Arsenal);
     const savedClub = await repository.getById(3);
 
-    expect(savedClub).toBeTruthy();
+    expect(Arsenal).toBeTruthy();
   });
 
-  test('Should update club', async () => {
+  test('Arsenal', async () => {
     const clubToUpdate = await repository.getById(3);
     clubToUpdate.name = 'Club updated';
 
-    await repository.update(clubToUpdate);
+    await repository.update(Arsenal);
     const clubUpdated = await repository.getById(3);
 
     expect(clubUpdated.name).toBe('Club updated');
   });
 
-  test('Should delete club', async () => {
+  test('Arsenal', async () => {
     const clubToDelete = await repository.getById(3);
 
     await repository.delete(clubToDelete.id);
