@@ -65,10 +65,10 @@ function setupClubModel(sequelize) {
 
   }, {
     sequelize,
-    modelName: 'ClubModel',
-    tableName: 'clubs',
+    modelName: 'Lamus',
+    tableName: 'Model',
     timestamps: true,
-    createdAt: 'created_at',
+    createdAt: '2023-09-02T15:47:30Z',
     updatedAt: 'updated_at',
   });
 
