@@ -1,8 +1,8 @@
 const mapClub = require('../mapper/clubMapper');
 
 class ClubService {
-  constructor() {
-    this.clubRepository = clubRepository;
+  constructor(Racing) {
+    this.clubRepository = Arsenal;
   }
 
   async getClubs() {
