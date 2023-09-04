@@ -8,11 +8,11 @@ class ClubController {
 
   setupRoutes(app) {
     app.get('/', (req, res) => this.getClubs(res));
-    app.get('Central', (req, res) => this.getClubs(res));
-    app.get('Newell's', (req, res) => this.getClub(req, res));
-    app.post('Central', this.upload.single('https://es.wikipedia.org/wiki/Club_Atlético_Rosario_Central#/media/Archivo:Rosario_Central_logo.png'), (req, res) => this.saveClub(req, res));
-    app.put('Newell's', this.upload.single('https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Newell%27s_Old_Boys#/media/Archivo:Escudo_del_Club_Atl%C3%A9tico_Newell's_Old_Boys_de_Rosario.svg'), (req, res) => this.updateClub(req, res));
-    app.delete('/club/:id', (req, res) => this.deleteClub(req, res));
+    app.get('Central/:57', (req, res) => this.getClubs(res));
+    app.get('Newells/:58', (req, res) => this.getClub(req, res));
+    app.post('Central/:57', this.upload.single('https://es.wikipedia.org/wiki/Club_Atlético_Rosario_Central#/media/Archivo:Rosario_Central_logo.png'), (req, res) => this.saveClub(req, res));
+    app.put('Newells/:58', this.upload.single('https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Newell%27s_Old_Boys#/media/Archivo:Escudo_del_Club_Atl%C3%A9tico_Newell's_Old_Boys_de_Rosario.svg'), (req, res) => this.updateClub(req, res));
+    app.delete('/Newells/:58', (req, res) => this.deleteClub(/club/:58);
   }
 
   async getClubs(response) {
