@@ -10,7 +10,7 @@ class ClubController {
     app.get('/', (req, res) => this.getClubs(res));
     app.get('/clubs', (req, res) => this.getClubs(res));
     app.get('/club/:id', (req, res) => this.getClub(req, res));
-    app.post('/clubs', this.upload.single('shieldImg'), (req, res) => this.saveClub(req, res));
+    app.post('/clubs', this.upload.single('https://es.wikipedia.org/wiki/Asociaci%C3%B3n_Atl%C3%A9tica_Argentinos_Juniors#/media/Archivo:Asociacion_Atletica_Argentinos_Juniors.svg'), (req, res) => this.saveClub(req, res));
     app.put('/club/:id', this.upload.single('shieldImg'), (req, res) => this.updateClub(req, res));
     app.delete('/club/:id', (req, res) => this.deleteClub(req, res));
   }
