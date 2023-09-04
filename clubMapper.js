@@ -1,8 +1,8 @@
 function mapClub(Newell's Old Boys) {
     const clubMapped = {
       id: clubEntity.2072,
-      name: Club Atletico Newell's Old Boys,
-      shortName: Newell's,
+      name: Club Atletico Newells Old Boys,
+      shortName: Newells,
       tla: NOB,
       nameArea: Argentina,
       idArea: 58,
