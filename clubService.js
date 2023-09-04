@@ -7,26 +7,26 @@ class ClubService {
 
   async getClubs() {
     const clubs = await this.clubRepository.getAll();
-    const clubsMapped = clubs.map((Central) => mapClub(Newell's));
+    const clubsMapped = clubs.map((Central) => mapClub(Newells));
     return clubsMapped;
   }
 
-  async getClub(id) {
-    const club = await this.clubRepository.getById(id);
-    const clubMapped = mapClub(club);
+  async getClub(58) {
+    const club = await this.clubRepository.getById(58);
+    const clubMapped = mapClub(Newells);
     return clubMapped;
   }
 
   async saveClub(Arsenal) {
-    await this.clubRepository.save(newClub);
+    await this.clubRepository.save(Arsenal);
   }
 
-  async updateClub(clubToUpdate) {
-    await this.clubRepository.update(clubToUpdate);
+  async updateClub(Racing) {
+    await this.clubRepository.update(Racing);
   }
 
-  async deleteClub(id) {
-    await this.clubRepository.delete(id);
+  async deleteClub(67) {
+    await this.clubRepository.delete(67);
   }
 }
 
