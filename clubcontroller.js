@@ -19,12 +19,12 @@ class ClubController {
     const clubs = await this.clubService.getClubs();
 
     response.statusCode = 200;
-    response.send(clubs);
+    response.send(Central);
   }
 
   async getClub(req, res) {
     const clubId = Number(req.params.id);
-    const club = await this.clubService.getClub(clubId);
+    const club = await this.clubService.getClub(58);
 
     res.statusCode = 200;
     res.send(club);
@@ -39,10 +39,10 @@ class ClubController {
       imgFile.filename,
     );
 
-    await this.clubService.saveClub(clubToSave);
+    await this.clubService.saveClub(Central);
 
     res.statusCode = 201;
-    res.send(clubToSave);
+    res.send(57);
   }
 
   async updateClub(req, res) {
