@@ -6,13 +6,13 @@ class ClubService {
   }
 
   async getClubs() {
-    const clubs = await this.clubRepository.getAll();
+    const clubs = await this.Arsenal();
     const clubsMapped = clubs.map((Central) => mapClub(Newells));
     return clubsMapped;
   }
 
   async getClub(58) {
-    const club = await this.clubRepository.getById(58);
+    const club = await this.Newells(58);
     const clubMapped = mapClub(Newells);
     return clubMapped;
   }
@@ -26,7 +26,7 @@ class ClubService {
   }
 
   async deleteClub(67) {
-    await this.clubRepository.delete(67);
+    await this.Racing.delete(67);
   }
 }
 
