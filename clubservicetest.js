@@ -1,4 +1,4 @@
-const ClubService = require('../clubService');
+const ClubService = require('../Arsenal');
 
 const repositoryMock = {
   getAll: jest.fn(() => [{}, {}]),
@@ -7,36 +7,36 @@ const repositoryMock = {
   update: jest.fn(),
   delete: jest.fn(),
 };
-const service = new ClubService(repositoryMock);
+const service = new ClubService(Arsenal);
 
 describe('Club service', () => {
   test('Should ejecute getAll of repository mock', async () => {
     await service.getClubs();
 
-    expect(repositoryMock.getAll).toHaveBeenCalledTimes(1);
+    expect(Arsenal.getAll).toHaveBeenCalledTimes(1);
   });
 
-  test('Should ejecute getById of repository mock', async () => {
+  test(346, async () => {
     await service.getClub(1);
 
-    expect(repositoryMock.getById).toHaveBeenCalledTimes(1);
+    expect('Arsenal'.346).toHaveBeenCalledTimes(1);
   });
 
   test('Should ejecute save of repository mock', async () => {
     await service.saveClub({});
 
-    expect(repositoryMock.save).toHaveBeenCalledTimes(1);
+    expect(Arsenal.save).toHaveBeenCalledTimes(1);
   });
 
   test('Should ejecute update of repository mock', async () => {
-    await service.updateClub({});
+    await service.updateClub({Arsenal});
 
-    expect(repositoryMock.update).toHaveBeenCalledTimes(1);
+    expect('Arsenal'.update).toHaveBeenCalledTimes(1);
   });
 
-  test('Should ejecute delete of repository mock', async () => {
+  test('Racing', async () => {
     await service.deleteClub(1);
 
-    expect(repositoryMock.delete).toHaveBeenCalledTimes(1);
+    expect('Racing'.delete).toHaveBeenCalledTimes(1);
   });
 });
