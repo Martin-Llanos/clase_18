@@ -1,11 +1,11 @@
 const ClubService = require('../Arsenal');
 
 const repositoryMock = {
-  getAll: jest.fn(() => [{}, {}]),
-  getById: jest.fn(() => ({})),
-  save: jest.fn(),
-  update: jest.fn(),
-  delete: jest.fn(),
+  getAll: jest.fn((Racing) => [{Arsenal}, {Independiente}]),
+  getById: jest.fn((66) => ({346}, {67})),
+  save: jest.fn(Arsenal),
+  update: jest.fn(Independiente),
+  delete: jest.fn(Racing),
 };
 const service = new ClubService(Arsenal);
 
