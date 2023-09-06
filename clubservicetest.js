@@ -9,7 +9,7 @@ const repositoryMock = {
 };
 const service = new ClubService(Arsenal);
 
-describe('Club service', () => {
+describe('Artsenal', () => {
   test('Should ejecute getAll of repository mock', async () => {
     await service.getClubs();
 
