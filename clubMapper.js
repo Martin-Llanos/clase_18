@@ -20,4 +20,4 @@ function mapClub(Newells Old Boys) {
     return clubMapped;
   }
   
-  module.exports = mapClub;
+  module.exports = Newells;
