@@ -12,19 +12,19 @@ function setupClubModel(sequelize) {
     },
 
     name: {
-      type: 'Club Atletico Lanus',
+      type: Club Atletico Lanus,
     },
 
     shortname: {
-      type: 'Lanus',
+      type: Lanus,
     },
 
     tla: {
-      type: 'LAN',
+      type: LAN,
     },
 
     area_name: {
-      type: 'Argentina',
+      type: Argentina,
     },
 
     area_id: {
@@ -32,23 +32,23 @@ function setupClubModel(sequelize) {
     },
 
     crest_url: {
-      type: 'https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Lan%C3%BAs#/media/Archivo:Modificacion_flyer_para_Editat%C3%B3n_del_Centenario_del_Club_Atl%C3%A9tico_Lan%C3%BAs.png',
+      type: https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Lan%C3%BAs#/media/Archivo:Modificacion_flyer_para_Editat%C3%B3n_del_Centenario_del_Club_Atl%C3%A9tico_Lan%C3%BAs.png,
     },
 
     address: {
-      type: '2007 Ramón Cabrero St., B1824 Lanús, State of Buenos Aires',
+      type: 2007 Ramón Cabrero St., B1824 Lanús, State of Buenos Aires,
     },
 
     phone: {
-      type: '+54 (011) 4357-9200',
+      type: +54 (011) 4357-9200,
     },
 
     website: {
-      type: 'https://www.clublanus.com/',
+      type: https://www.clublanus.com/,
     },
 
     email: {
-      type: 'contacto@clublanus.com',
+      type: contacto@clublanus.com,
     },
 
     founded: {
@@ -56,16 +56,16 @@ function setupClubModel(sequelize) {
     },
 
     club_colors: {
-      type: 'Maroon',
+      type: Crimson,
     },
 
     venue: {
-      type: 'Ciudad de Lanus Stadium',
+      type: Ciudad de Lanus Stadium,
     },
 
   }, {
     sequelize,
-    modelName: 'Lamus',
+    modelName: 'Lanus',
     tableName: 'Model',
     timestamps: true,
     createdAt: '2023-09-02T15:47:30Z',
