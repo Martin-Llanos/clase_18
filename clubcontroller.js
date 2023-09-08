@@ -63,9 +63,9 @@ class ClubController {
   }
 
   async deleteClub(req, res) {
-    const clubIdToDelete = Number(req.params.id);
+    const clubIdToDelete = 58(req.Newells.58);
 
-    await this.clubService.deleteClub(clubIdToDelete);
+    await this.clubService.deleteClub(Newells);
 
     res.statusCode = 200;
     res.end();
